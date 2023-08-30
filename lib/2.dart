@@ -20,7 +20,7 @@ class Persona {
     peso = 0.0;
     altura = 0.0;
   }
-
+//dddddd
   // Constructor con nombre, edad y sexo; el resto por defecto
   Persona.nombreEdadSexo(this.nombre, this.edad, this.sexo) {
     dni = "";
