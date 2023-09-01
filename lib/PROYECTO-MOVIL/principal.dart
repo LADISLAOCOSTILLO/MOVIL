@@ -14,8 +14,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'HOLA CHOCHE',
       home: Scaffold( 
+             
         appBar: AppBar(  
-        title: Text('PROGRAMACION MOVIL -- LADISLAO COSTILLO CAMACHO'),
+           
+        title: Text(
+          
+          'PROGRAMACION MOVIL -- LADISLAO COSTILLO CAMACHO',
+          style:TextStyle(
+          fontSize: 14.10,
+          color:Color.fromARGB(252, 243, 246, 247)
+          ),
+        ),
           elevation: 20,
           backgroundColor: Color.fromARGB(225, 12, 6, 196), // Cambia el color de fondo a rojo
 
@@ -51,12 +60,29 @@ class MyApp extends StatelessWidget {
             ],
             ),
             
-            body: Center(
-          child: Container( 
-            child: Text("HOLA COMPAÑEROS"), 
+            //body: Align(
+                body: Padding( 
+                  padding: EdgeInsets.only(top:30.25),
+                  child: Align( 
+             //alignment: Alignment.bottomCenter,//La posicion parate inferior centrada
+              //alignment: Alignment.bottomLeft,//alineado a la Izquierda
+              //alignment: Alignment.bottomRight, //alideado a la derecha
+              alignment: Alignment.topCenter,//centrado parte superior
+            child: Container( 
+            
+            child: Text(
+              "PANTALLA DE INICIO DE SESION",
+            style:TextStyle( 
+            fontSize: 17.0,
+            fontFamily:'MyCustomFont',
+            //fontFamily: 'MyCustomFont',
+            color:Colors.black
+
+            ), 
+          ),
           ),
         ),
-       
+      ),
           bottomNavigationBar:BottomNavigationBar(
             items: [
               BottomNavigationBarItem(
