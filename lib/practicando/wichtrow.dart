@@ -9,27 +9,34 @@ void main(List<String> args) {
             Color(0xffccd5ae),
         body: SafeArea(
           
+          
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.end, //alineado a la derecha
+            //crossAxisAlignment: CrossAxisAlignment.start,//alineado a la izquierda
+            crossAxisAlignment: CrossAxisAlignment.stretch,//alineado en todo
+            
+
             children: [//children es para agregar listas
             Container(   
               child:Text("Algoritmos 1"),
               color: Color.fromARGB(255, 23, 2, 51),
               height:50.0,
-              alignment: Alignment.center
+              //alignment: Alignment.center
             ),
 
             Container(  
               child: Text("Fundamemtos de programacion"),
               color: Colors.amber,
               height: 50.0,
-              alignment: Alignment.center,
+              //alignment: Alignment.center,
             ),
 
             Container( 
               child:Text("Ingenieria de software"),
               color: Color.fromARGB(255, 226, 7, 73),
               height: 50.0,
-              alignment: Alignment.center,
+              //alignment: Alignment.center,
             ),
           ],)
         ),
