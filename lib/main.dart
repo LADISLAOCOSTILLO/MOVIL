@@ -1,20 +1,16 @@
-import 'package:flutter/material.dart';  //es una declaración de importación en Dart
+import 'package:flutter/material.dart'; //es una declaración de importación en Dart
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'HOLA MUNDO!',
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
-        body: Center(
-          child: Text('Hello World'),
-        ),
+        style: TextStyle(fontSize: 50),
+        //style: TextStyle(fontSize: 24),
+        
+        textDirection: TextDirection.ltr,
       ),
-    );
-  }
+    ),
+  );
 }
