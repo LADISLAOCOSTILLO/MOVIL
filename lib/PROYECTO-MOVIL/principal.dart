@@ -68,18 +68,31 @@ class MyApp extends StatelessWidget {
               //alignment: Alignment.bottomLeft,//alineado a la Izquierda
               //alignment: Alignment.bottomRight, //alideado a la derecha
               alignment: Alignment.topCenter,//centrado parte superior
-            child: Container( 
-            
-            child: Text(
-              "PANTALLA DE INICIO DE SESION",
+              child:Column( 
+                children: [  
+                  SizedBox( 
+                  //Image .asset(  
+                    //"assets/images/password.png",
+                    width: 70.0, //ancho de la imagen
+                    height: 50.0,//alto de la imagen
+                    child: ClipOval(  
+                    child: Image.asset('assets/foto.jpg'),
+                                      
+                    )
+                   
+                  ),
+            //child: Container( 
+            //child: Text(
+              Text( 
+              "LADISLAO COSTILLO Y FAMILIA",
             style:TextStyle( 
-            fontSize: 17.0,
-            fontFamily:'MyCustomFont',
-            //fontFamily: 'MyCustomFont',
-            color:Colors.black
-
+              fontSize: 17.0,
+              fontFamily:'MyCustomFont',
+              //fontFamily: 'MyCustomFont',
+              color:Colors.black
             ), 
           ),
+          ],
           ),
         ),
       ),
